@@ -10,6 +10,7 @@ const Friend = (props) => {
         borderRadius: '10px',
         backgroundColor: 'lightskyblue'
     };
+    const url = `/friend/${id}`;
     const handleFriendClick = () => {
         history.push(`/friend/${id}`)
     }
@@ -22,7 +23,7 @@ const Friend = (props) => {
             <p><small>I live in: {address.city}</small></p>
             <Link to ={`/friend/${id}`}>Visit Me</Link>
             <br />
-            <Link>
+            <Link to = {url}>
             <button>Visit Me</button>
             </Link>
             <br />
