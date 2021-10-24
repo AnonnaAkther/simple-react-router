@@ -4,14 +4,16 @@ import Home from './components/Home/Home';
 import Friends from './components/Friends/Friends';
 import About from './components/About/About';
 import NotFound from './components/NotFound/NotFound';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
 import Friend from './components/Friend/Friend';
+import Header from './components/Header/Header';
 
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
+      <Header></Header>
       <Switch>
         <Route path="/home">
           <Home></Home>
